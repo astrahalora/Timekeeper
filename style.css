@@ -55,7 +55,7 @@ html, body {
   height: 100px;
   width: 180px;
   background: rgb(211, 193, 115);
-  background: radial-gradient(circle, rgb(211, 193, 115) 35%, rgb(53, 97, 105) 100%);
+  border-right: 6px solid rgb(53, 97, 105);
   border-bottom-right-radius: 40%;
   position: absolute;
   top: 0;

@@ -8,7 +8,7 @@ html, body {
     height: 100px;
     width: 180px;
     background: $secondary-color;
-    background: $stamp-color;
+    border-right: 6px solid $accent-color;
     border-bottom-right-radius: 40%;
     position: absolute;
     top: 0;
