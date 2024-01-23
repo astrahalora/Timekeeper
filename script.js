@@ -7,3 +7,4 @@ const pauseButton = document.querySelector("#pause");
 
 // Timer
 const myTimer = new Timer(durationInput, startButton, pauseButton);
+// myTimer.start();
