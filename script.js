@@ -10,12 +10,12 @@ function onStart() {
     console.log("Timer started");
 }
 
-function onClick() {
-
+function onTick() {
+    console.log("Timer just ticked down");
 }
 
 function onComplete() {
-
+    console.log("Timer was completed");
 }
 
 // Timer
@@ -23,7 +23,7 @@ const myTimer = new Timer(
     durationInput, startButton, pauseButton,
     {
         onStart,
-        onClick,
+        onTick,
         onComplete
     }
 );
