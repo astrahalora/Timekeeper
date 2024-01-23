@@ -1,0 +1,13 @@
+html, body {
+    background-color: $main-color;
+}
+
+#logobar {
+    height: 50px;
+    padding: 0.5em;
+    background-color: $secondary-color;
+
+    img {
+        height: 100%;
+    }
+}

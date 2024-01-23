@@ -43,4 +43,17 @@ a {
 
 textarea {
   resize: none;
+}
+
+html, body {
+  background-color: rgb(114, 181, 185);
+}
+
+#logobar {
+  height: 50px;
+  padding: 0.5em;
+  background-color: rgb(211, 193, 115);
+}
+#logobar img {
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
