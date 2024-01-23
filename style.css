@@ -109,7 +109,7 @@ html, body {
 #timerspace #timer #duration {
   font-size: 70px;
   font-weight: bold;
-  width: 100px;
+  width: 200px;
   text-align: center;
 }
 #timerspace #timercalls img {

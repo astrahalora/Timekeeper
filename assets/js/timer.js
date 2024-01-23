@@ -6,6 +6,14 @@ export class Timer {
 
         this.startButton.addEventListener("click", this.start);
         this.pauseButton.addEventListener("click", this.pause);
+        this.durationInput.addEventListener("input", this.limit);
+    }
+
+    limit = () => {
+        const maxChars = 5;
+        if(this.durationInput.value.length > maxChars) {
+            this.durationInput.value = this.durationInput.value.slice(0, maxChars);
+        }
     }
 
     start = () => {
