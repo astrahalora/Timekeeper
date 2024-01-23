@@ -1,22 +1,27 @@
 export class Timer {
-    constructor(durationInput, startButton, pauseButton) {
+    constructor(durationInput, startButton, pauseButton, callbacks) {
         this.durationInput = durationInput;
         this.startButton = startButton;
         this.pauseButton = pauseButton;
+        if(callbacks) {
+            this.onStart = callbacks.onStart;
+        }
 
         this.startButton.addEventListener("click", this.start);
         this.pauseButton.addEventListener("click", this.pause);
-        this.durationInput.addEventListener("input", this.limit);
+        this.durationInput.addEventListener("input", this.limitInputLength);
     }
 
-    limit = () => {
+    limitInputLength = () => {
         const maxChars = 5;
-        if(this.durationInput.value.length > maxChars) {
-            this.durationInput.value = this.durationInput.value.slice(0, maxChars);
-        }
+        return this.durationInput.value.length > maxChars ?
+            this.durationInput.value = this.durationInput.value.slice(0, maxChars) : null;
     }
 
     start = () => {
+        if(this.onStart) {
+            this.onStart();
+        }
         this.tick();
         this.ticker = setInterval(this.tick, 1000);
     }
@@ -38,5 +43,4 @@ export class Timer {
     set timeRemaining(time) {
         this.durationInput.value = time;
     }
-
 }
