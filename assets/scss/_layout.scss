@@ -1,5 +1,7 @@
 html, body {
     background-color: $main-color;
+    height: 100%;
+    width: 100%;
 }
 
 #logostamp {
@@ -7,10 +9,26 @@ html, body {
     width: 180px;
     background-color: $secondary-color;
     border-bottom-right-radius: 40%;
+    position: absolute;
+    top: 0;
+    left: 0;
 
     img {
-        margin-top: 1em;
-        margin-left: 1em;
+        margin: 1em 0 0 1em;
         height: 60px;
     }
+}
+
+#timerframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+#timerbox {
+    background-color: $secondary-color;
+    height: 500px;
+    width: 500px;
+    border-radius: 20px;
 }
