@@ -6,7 +6,7 @@
     <title>Timekeeper</title>
     <link rel="icon" type="image/x-icon" href="./assets/img/timekeeper.ico">
     <link rel="stylesheet" href="style.min.css">
-    <script src="script.js" defer></script>
+    <script type="module" src="script.js" defer></script>
 </head>
 <body>
     <div id="logostamp">
@@ -15,7 +15,13 @@
     <div id="timerframe">
         <div id="timerbox">
             <div id="timerspace">
-
+                <div id="timer">
+                    <input type="text" id="duration" placeholder="Input here">
+                </div>
+                <div id="timercalls">
+                    <button type="button" id="start">Start</button>
+                    <button type="button" id="pause">Pause</button>
+                </div>
             </div>
         </div>
     </div>
