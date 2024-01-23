@@ -7,7 +7,8 @@ html, body {
 #logostamp {
     height: 100px;
     width: 180px;
-    background-color: $secondary-color;
+    background: $secondary-color;
+    background: $stamp-color;
     border-bottom-right-radius: 40%;
     position: absolute;
     top: 0;
@@ -27,8 +28,16 @@ html, body {
 }
 
 #timerbox {
-    background-color: $secondary-color;
+    background: $border-color;
+    background: $gradient-border;
     height: 500px;
     width: 500px;
+    border-radius: 20px;
+}
+
+#timerspace {
+    margin: 1em;
+    height: 93%;
+    background: $secondary-color;
     border-radius: 20px;
 }
