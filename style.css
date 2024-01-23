@@ -46,14 +46,17 @@ textarea {
 }
 
 html, body {
-  background-color: rgb(114, 181, 185);
+  background-color: rgb(124, 181, 184);
 }
 
-#logobar {
-  height: 50px;
-  padding: 0.5em;
+#logostamp {
+  height: 100px;
+  width: 180px;
   background-color: rgb(211, 193, 115);
+  border-bottom-right-radius: 40%;
 }
-#logobar img {
-  height: 100%;
+#logostamp img {
+  margin-top: 1em;
+  margin-left: 1em;
+  height: 60px;
 }/*# sourceMappingURL=style.css.map */

@@ -2,12 +2,15 @@ html, body {
     background-color: $main-color;
 }
 
-#logobar {
-    height: 50px;
-    padding: 0.5em;
+#logostamp {
+    height: 100px;
+    width: 180px;
     background-color: $secondary-color;
+    border-bottom-right-radius: 40%;
 
     img {
-        height: 100%;
+        margin-top: 1em;
+        margin-left: 1em;
+        height: 60px;
     }
 }
