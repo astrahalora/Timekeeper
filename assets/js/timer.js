@@ -18,6 +18,17 @@ export class Timer {
     }
 
     tick = () => {
-        console.log("tick");
+        return this.timeRemaining <= 0 ?
+            this.pause() : this.timeRemaining = this.timeRemaining - 1;
     }
+
+    get timeRemaining() {
+        const time = parseFloat(this.durationInput.value);
+        return isNaN(time) ? 61 : time;
+    }
+
+    set timeRemaining(time) {
+        this.durationInput.value = time;
+    }
+
 }

@@ -8,6 +8,15 @@
     justify-content: center;
     align-items: center;
 
+    #timer {
+        #duration {
+            font-size: 70px;
+            font-weight: bold;
+            width: 100px;
+            text-align: center;
+        }
+    }
+
     #timercalls {
         img {
             height: 100px;
