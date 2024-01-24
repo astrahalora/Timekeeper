@@ -1,4 +1,4 @@
-import { Timer } from './assets/js/Timer.js';
+import { Timer } from './assets/js/timer.js';
 
 // DOM elems
 const durationInput = document.querySelector("#duration");
@@ -17,6 +17,9 @@ function onTick() {
 function onComplete() {
     console.log("Timer was completed");
 }
+
+// Circle perimeter ref (2 * Math.PI * radius)
+const circlePerimeter = 2 * Math.PI * 160;
 
 // Timer
 const myTimer = new Timer(

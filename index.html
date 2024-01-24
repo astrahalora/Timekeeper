@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="style.min.css">
     <script type="module" src="script.js" defer></script>
 </head>
+
 <body>
     <div id="logostamp">
         <img src="./assets/img/timekeeper_logo.png" alt="Timekeeper Logo">
@@ -15,8 +17,22 @@
     <div id="timerframe">
         <div id="timerbox">
             <div id="timerspace">
+                <svg height="400" width="400">
+                    <circle 
+                        r="160" 
+                        cx="200" 
+                        cy="200" 
+                        fill="none" 
+                        stroke="rgb(53, 97, 105)" 
+                        stroke-width="15" 
+                        stroke-dasharray="1005.30"
+                        stroke-dashoffset="0"
+                        transform="rotate(-90 200 200)"
+                    />
+                </svg>
                 <div id="timer">
-                    <input type="text" id="duration" value="60">
+                    <label for="duration">Timekeeper</label><br>
+                    <input type="text" name="duration" id="duration" value="60">
                 </div>
                 <div id="timercalls">
                     <img src="./assets/img/start.png" alt="Start" id="start">
@@ -26,4 +42,5 @@
         </div>
     </div>
 </body>
+
 </html>
