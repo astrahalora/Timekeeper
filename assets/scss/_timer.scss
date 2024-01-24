@@ -12,9 +12,14 @@
 
     svg {
         position: absolute;
-        top: 50px;
-        left: 30px;
+        top: 90px;
+        left: 60px;
         z-index: -1;
+
+        @media (max-width: 530px) {
+            top: -12px;
+            left: -10px;
+        }
     }
 
     #timer {
@@ -26,6 +31,10 @@
             left: 12px;
             font-size: 20px;
             font-weight: bold;
+
+            @media (max-width: 530px) {
+                top: -20px;
+            }
         }
 
         #duration {
