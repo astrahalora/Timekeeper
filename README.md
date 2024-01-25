@@ -9,4 +9,4 @@ Fully responsive timer app, featuring:
 - class component for timer
 - custom logo, fav icon, timer start / pause images 
 
-![Timekeeper Timer](https://images2.imgbox.com/1b/ea/WTWS23FM_o.jpg)
+![Timekeeper Timer](https://images2.imgbox.com/8e/85/Jr0OYH2j_o.jpg)
