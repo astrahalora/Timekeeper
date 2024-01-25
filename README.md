@@ -2,7 +2,9 @@
 
 ## About
 
-Fully responsive timer app, featuring:
+Fully responsive timer app. **[Cick Here to View In Browser](https://astrahalora.github.io/timekeeper)** 
+
+Featuring:
 
 - circle time elapsed animation
 - input seconds and watch them tick down in real time
