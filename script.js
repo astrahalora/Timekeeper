@@ -34,5 +34,3 @@ const myTimer = new Timer(
         onComplete
     }
 );
-
-// myTimer.start();
